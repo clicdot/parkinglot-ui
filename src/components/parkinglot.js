@@ -56,7 +56,7 @@ const ParkingLot = () => {
         <tbody>
         {spaces && spaces.map((space, index) => (
           <tr key={index}>
-            <td><button title="Click Me" className={`building`} name={space.building} value="1" onClick={handleInput}>{space.building}1</button></td>
+            <td><button title="Click Me" className={`building ${space.active ? '' : 'hidden'}`} name={space.building} value="1" onClick={handleInput}>{space.building}1</button></td>
             <td style={{"width": "500px"}}>
               {space && space.spaces.map((lot, idx) => {
                 const key = Object.keys(lot);
@@ -71,7 +71,7 @@ const ParkingLot = () => {
                 );
               })}
             </td>
-            <td><button title="Click Me" className={`building`} name={space.building} value="2" onClick={handleInput}>{space.building}2</button></td>
+            <td><button title="Click Me" className={`building ${space.active ? '' : 'hidden'}`} name={space.building} value="2" onClick={handleInput}>{space.building}2</button></td>
           </tr>
         ))}
         </tbody>

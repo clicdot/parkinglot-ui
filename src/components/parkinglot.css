@@ -16,6 +16,10 @@
   cursor: pointer;
 }
 
+.building.hidden {
+  display: none;
+}
+
 .occupied {
   border: 3px solid #fcba03;
   color: #ff3e03;
@@ -43,4 +47,3 @@
   margin: 5px;
   float: left;
 }
-
