@@ -1,0 +1,46 @@
+.lot-space {
+  height: 70px;
+  width: 50px;
+  border: 1px dotted #ccc;
+  float: left;
+  margin: 5px;
+  font-size: 12px;
+}
+
+.building {
+  width: 40px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.occupied {
+  border: 3px solid #fcba03;
+  color: #ff3e03;
+  font-weight: bold;
+}
+
+.legend legend {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.legend-lot-space--empty {
+  border: 1px dotted #ccc;
+  width: 14px;
+  height: 14px;
+  margin: 5px;
+  float: left;
+}
+
+.legend-lot-space--occupied {
+  border: 3px solid #fcba03;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  float: left;
+}
+
