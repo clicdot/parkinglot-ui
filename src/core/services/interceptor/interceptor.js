@@ -20,7 +20,6 @@ const onResponse = (response) => {
 const onResponseError = (error) => {
   console.error(`[response error] [${JSON.stringify(error)}]`);
 
-  console.log('CODE', error);
   alert('Parking Lot Full!');
   return Promise.reject(error);
 }

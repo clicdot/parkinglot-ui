@@ -8,10 +8,9 @@ const ParkingLot = () => {
   const handleInput = (event) => {
     event.preventDefault();
     const { name, value } = event.target;
-    console.log(name, value);
+
     api.getSpace(name, value)
     .then((res) => {
-      console.log('RESULT', res);
       setSpaces(res);
     })
     .catch(e => {
@@ -27,7 +26,6 @@ const ParkingLot = () => {
   const retrieveSpaces = () => {
     api.getAll()
     .then((res) => {
-      console.log('DATA', res);
       setSpaces(res);
     })
     .catch(e => {
@@ -63,7 +61,6 @@ const ParkingLot = () => {
                 const lotspace = key[0];
                 const occupied = lot[key];
 
-                console.log(lotspace, occupied);
                 return (
                   <div key={idx}>
                     <div className={`lot-space ${occupied ? 'occupied' : 'empty'}`}>{lotspace}</div>
